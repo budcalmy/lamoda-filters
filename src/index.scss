@@ -1,0 +1,35 @@
+@font-face {
+  font-weight: 400; /* Соответствует значению normal */
+  font-family: SFProText;
+  src: url("../public/fonts/SFProText-Regular.ttf");
+}
+
+@font-face {
+  font-weight: 700; /* Соответствует значению bold */
+  font-family: SFProText;
+  src: url("../public/fonts/SFProText-Bold.ttf");
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: SFProText;
+  src: url("../public/fonts/SFProText-Semibold.ttf");
+}
+
+
+
+:root[data-theme="light"] {
+    --background-color: #ffffff;
+  }
+  
+  :root[data-theme="dark"] {
+    --background-color: #121212;
+  }
+  
+  body {
+    transition: 0.3s;
+    background: var(--background-color);
+    font-family: SFProText;
+  }
+
+  

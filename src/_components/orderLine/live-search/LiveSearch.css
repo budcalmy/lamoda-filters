@@ -1,0 +1,25 @@
+.search-container {
+    border: 0.2vw solid black;
+    display: flex;
+    padding: 0.3vw;
+    border-radius: 1vw;
+}
+
+.search-form_txt {
+    border: none;
+    outline: none;
+    font-size: 1.5vw;
+    border-radius: 10px;
+    padding-left: 1vw;
+}
+
+.search-container img {
+    width: 3vw;
+}
+
+
+:root[data-theme="dark"] {
+    .search-container {
+        border: 0.2vw solid rgb(255, 255, 255);
+    }
+  }

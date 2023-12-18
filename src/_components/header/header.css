@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-header-section {
+  display: flex;
+  align-items: center;
+  margin: 1vw;
+
+}
+
+.dark-theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.dark-theme-toggle img{
+    width: 2vw;
+    height: 2vw;
+}
+
+:root[data-theme="dark"] {
+    .dark-theme-toggle .sun{
+        /* width: 5vw;
+        height: 5vw;
+        right: 5vw; */
+        transform: scale(2.2);
+    }
+  }
+
+.switch{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 34px;
+    
+}
+
+.switch__input{
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.switch__slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    border-radius: 20px;
+    box-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+.switch__slider::before{
+    content: "";
+    position: absolute;
+    cursor: pointer;
+    left: 5px;
+    bottom: 5px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.switch__input:focus + .switch__slider {
+    box-shadow: 0 0 1px rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+.switch__input:checked + .switch__slider {
+    background-color: white;
+}
+
+.switch__input:checked + .switch__slider::before {
+    transform: translateX(23px);
+    -webkit-transform: translateX(23px);
+    -ms-transform: translateX(23px);
+    background-color: black;
+    transition: 0.3s;
+}
+
+.logo-image{
+    margin-left: 32vw;
+}
+
+.logo-image img{
+    width: 22vw;
+    cursor: pointer;
+}
+
+.btn-plus-basket{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.login-button{
+    border: 0.2vw solid black;
+    border-radius: 10px;
+}
+
+.login-button:hover{
+    opacity: .5;
+}
+
+.basket{
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+
+    cursor: pointer;
+}
+
+.basket img{
+    width: 4vw;
+    height: 4vw;
+}
+
+.basket:hover{
+    opacity: .5;
+}
+

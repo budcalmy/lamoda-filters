@@ -1,0 +1,22 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-app-section{
+    margin: 1vw;
+}
+
+.filters_content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.orderLine_liveSearch-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1vw;
+}
+
